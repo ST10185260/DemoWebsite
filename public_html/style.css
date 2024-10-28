@@ -1,0 +1,606 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Aug 11, 2024, 1:07:18 PM
+    Author     : RC_Student_lab
+*/
+
+
+.nav-buttons{
+    margin-left: 40%
+        
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+}
+h6{
+    color:#D8D8D8;
+    
+}
+button{
+    font-size:0.8rem;
+    font-weight: 900;
+    outline:none;
+    border:none;
+    background-color: #1d1d1d;
+    color:aliceblue;
+    padding:13px  30px;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: 0.5s ease;
+        
+}
+button:hover{
+    background-color: black;
+}
+
+
+.navbar{
+    font-size: 20px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    top:0;
+    left:0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.navbar-light .navbar-nav .nav-link{
+    padding:0 20px;
+    color:#000;
+    transition: 0.4s ease;
+    
+}
+.navbar-light .navbar-nav .nav-link , 
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active ,
+.navbar i:hover{
+    color:Black;
+    
+}
+.navbar i {
+    font-size: 1.2rem;
+    padding:0 0.7px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    margin-left: 5px; 
+}
+@media only screen and (max-width: 990px){
+    .nav-buttons{
+        margin: 10px;
+    }
+    .nav-buttons ul{
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items:flex-start;
+        text-align: left;
+        
+    }
+    .nav-buttons ul .fas{
+        margin:20px 5px 10px 20px;
+    }
+    
+    
+}
+
+
+
+#home{
+  background-image: url('Boys of soweto.png');
+  width:100%;
+  height:100vh;
+  background-size: cover;
+  background-position-x: 200px;
+  background-position-y: 80px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items : flex-start;
+  color:white;
+  
+}
+#new .one img{
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#new .one{
+    position:relative;
+}
+
+#new .one .details{
+    position: absolute;
+    top:0;
+    left:0;
+    color:white;
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.6;
+    background-color: rgb(1,1,1);
+    width: 100%;
+    height:100%;
+    
+    
+}
+
+
+#new .one .details:hover{
+    background-color: grey;
+}
+
+#new .one:nth-child(1) .details{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:start;
+}
+
+#new .one:nth-child(2) .details{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:start;
+}
+#new .one:nth-child(3) .details{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:flex-start;
+    text-align:start;
+}
+/* Product */
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+}
+.product img{
+    width:90%;
+    height:90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s all;;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+#banner{
+  background-image: url('BOS2.png');
+  width:100%;
+  height:60vh;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 80px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items : flex-start;
+  color:white;
+  
+}
+#banner button:hover{
+    background-color:grey;
+}
+
+footer{
+    background-color: black;
+}
+footer h5{
+    color:white;
+    font-weight: 700;
+    font-size:1.2rem;
+}
+
+footer li{
+    padding-bottom: 4px;
+
+}
+footer li a{
+    font-size: 0.8rem;
+    color:white;
+    text-decoration: none;
+}
+
+footer li a:hover{
+    color:grey;
+}
+
+footer .copyright a{
+    color:black;
+    height:40px;
+    width:40px;
+    background-color: white;
+    display:inline-block;
+    text-align:center;
+    line-height: 38px;
+    border-radius:50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+}
+
+footer .copyright a:hover{
+    color:grey;
+    background-color: grey;
+}
+
+footer p{
+    color:white;
+}
+
+
+footer .copyright img{
+    width: 50%;
+}
+
+.logo{
+    width:40px;
+    height:40px;
+    
+}
+
+
+.navbar .brand{
+    color:black;
+    margin:3px 5px;
+    font-size: 1.5rem;
+}
+
+.single-product input:focus {
+    outline: none;
+}
+
+.single-product input{
+    width:50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size:16px;
+    margin-right: 10px;
+    
+}
+
+.single-product .buy-btn{
+    background-color: Black;
+    opacity: 1;
+    transition: 0.4s all;
+}
+
+.single-product .buy-btn:hover{
+    background-color: grey;
+}
+
+/* Cart */
+
+.cart table{
+    width:100%;
+    border-collapse: collapse;
+}
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart th{
+    text-align: left;
+    padding:5px 10px;
+    color:White;
+    background-color: black;
+        
+}
+.cart td{
+    padding: 10px 20px;
+    
+}
+
+.cart td img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.cart td input{
+    width:40px;
+    height:30px;
+    padding:5px;
+}
+
+.cart td a{
+    color:black;
+    
+}
+
+.cart .remove-btn{
+    color:black;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: none;
+    border: none;
+    width:100%;
+}
+
+.cart .edit-btn
+{
+    color:black;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    width:100%;
+    
+}
+
+.cart .product-info p{
+    margin: 3px;
+}
+
+
+.cart-total{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.cart-total table{
+    width:100%;
+    max-width: 500px;
+    border-top:3px solid black;
+}
+
+td:last-child{
+    text-align: right;
+    
+}
+th:last-child{
+    text-align: right;
+}
+
+.checkout-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkkout-btn{
+    display:flex;
+    justify-content: flex-end;
+    background-color: white;
+    color:black;
+        
+        
+}
+
+/*Login*/
+#login-form{
+    width:50%;
+    margin:5px auto;
+    text-align: center;
+    padding:20px;
+    border-top: 1px Solid black;
+}
+#login-form input{
+    width:50%;
+    margin:5px auto;
+}
+
+#login-form #login-btn{
+    background-color: black;
+    color:white;
+    
+}
+
+#login-form #register{
+    color:Black ;
+}
+
+/* Register */
+
+#register-form{
+    width:50%;
+    margin:5px auto;
+    text-align: center;
+    padding:20px;
+    border-top: 1px Solid black;
+}
+#register-form input{
+    width:50%;
+    margin:5px auto;
+}
+
+#register-form #register-btn{
+    background-color: black;
+    color:white;
+    
+}
+
+#register-form #login-url{
+    color:Black ;
+}
+
+/* Account page */
+
+#account-form{
+    width:50%;
+    margin:55px;
+    text-align: center;
+    padding:20px;
+}
+
+#account-form input{
+    margin:5px auto;
+}
+
+#account-form #change-pass-btn{
+    color:white;
+    background-color:black;
+}
+
+.account-info #order-btn , #logout-btn{
+    color:black;
+    text-decoration: none;
+}
+
+/* Order */
+.order table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.order .product-info{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.order th{
+    text-align: left;
+    padding:5px 10px;
+    color:white;
+    background-color:black;
+    
+}
+
+
+
+.order td{
+    padding:10px 20px;
+}
+
+.order td img{
+    width:80px;
+    height:80px;
+    margin-right:10px;
+}
+
+/*checkou */
+
+#checkout-form .checkout-small-element{
+    display:inline-block;
+    width:48%;
+    margin: 10px auto;
+}
+#checkout-form .checkout-large-element{
+    width:97%;
+}
+
+.orders .order-details-btn{
+    color: #fff;
+    background-color: #000;
+}
+
+#checkout-form .checkout-btn-container{
+    margin: 10px;
+    text-align: right;
+    margin-right:40px;
+}
+
+#checkout-form #checkout-btn{
+    color:white;
+    background-color: black;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: black;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
